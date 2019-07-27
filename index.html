@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>Resume | Solution Architect | Jayesh PRAJAPATI</title>
+    <title>Jayesh PRAJAPATI | Solution Architect</title>
     
     <!-- Meta -->
     <meta charset="utf-8">
@@ -54,13 +54,13 @@
 	}
 	</style>
 	<script type="text/javascript">
-//	function print() {
-//		var w = window.open();
-//		w.document.write(document.getElementsByTagName('HEAD')[0].outerHTML + "<body>"+  document.getElementById('resume-wrapper').outerHTML + "</body>");
-//		w.print();
-//		w.close();
-//	}
-	
+	// custom javascript must go here
+	var onloadFunction = window.onload
+	window.onload = function () {
+		var yearExpEl = document.getElementById("yearExp");
+		yearExpEl.innerHTML = " " + (new Date().getFullYear() - 2006) + "+";
+		onloadFunction.call(window);
+	}
 	</script>
 </head> 
 
@@ -96,7 +96,7 @@
 			    <section class="resume-section summary-section mb-5">
 				    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary</h2>
 				    <div class="resume-section-content">
-					    <p class="mb-0">Working as Manager at SmartStream Technologies, Mumbai. In finance industry, 13+ years of experience in solution development. ...</p>
+					    <p class="mb-0">Working as Manager at SmartStream Technologies, Mumbai since 2006 with over <span id="yearExp">11+</span> years of experience with solution development in BFSI domain. Before SmartStream, worked at Exceed Consultancy Services as Software Engineer cum Build/Release Engineer. Around 2.5 years of experience in developing productivity tools and reporting tools.</p>
 				    </div>
 			    </section><!--//summary-section-->
 			    <div class="row">
@@ -115,23 +115,53 @@
 										    <div class="resume-position-time">2006 - Present</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
-										    <p>Delivering solutions Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
+										    <p>Responsible for adapting client requirements to technical requirements in order to develop an appropriate solution for the customer. Responsibilities include analyzing process flows, consulting with clients, preparing design documents, taking part in project meetings, and supporting pre-sales staff. Extensive experience in development of Reference Data Utility (<a href="https://www.smartstreamrdu.com/#srd2">RDU</a>) and Fees and Expense Management solutions (<a href="https://www.smartstream-stp.com/Solutions/What_Do_You_Need/Fees_and_Expense_Management">FEMS</a>)</p>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
-										    <p>Praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-										    <ul>
-											    <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-											    <li>At vero eos et accusamus et iusto odio dignissimos.</li>
-											    <li>Blanditiis praesentium voluptatum deleniti atque corrupti.</li>
-											    <li>Maecenas tempus tellus eget.</li>
-										    </ul>
+                                            <p></p>
+                                            <ul>
+                                            <li>Recognized as subject matter expert for TLM Transaction Fees and Invoice Management solution (TFIM) with-in FEMS business unit</li>
+                                            <li>Contributed on daily basis towards Full Managed Services offering of TFIM On-Demand</li>
+                                            <li>Contributed on weekly basis towards Application Support of TFIM On-Premise client</li>
+                                            <li>Worked with clients post-implementation on user testing, debugging, support and maintenance</li>
+                                            <li>Co-ordinated project planning, resource allocation, scope, schedule, status and documentation</li>
+                                            <li>Conducted technical workshops and education sessions for customers, development, testing and dev-ops teams</li>
+                                            <li>Managed team of 10 personnel focused on implementing resolutions and updates</li>
+                                            <li>Collaborated closely with upper management to drive strategy through development and implementation of new processes</li>
+                                            <li>Recommended architectural improvements, design solutions and integration solutions</li>
+                                            <li>Improved development quality by implementing use of productivity tools like JIRA, Confluence, Bamboo, Jenkins, Sonar, BitBucket, Pull-request reviews, etc.</li>
+                                            <li>Worked with quality assurance team to set up scripts, test case and automation protocols</li>
+                                            <li>Development team re-presentative during SOC2 Type-II compliance audit</li>
+                                            <li>Contributed in many TLM solutions - a) Transaction Fees and Invoice Management, b) Morpheus, c) Exception Management, c) Corporate Action Services and d) Reference Data Utilities (RDU)</li>
+                                            <li>Gain expertise in a) Troubleshot of performance issues, b) Enterprise Integrations and c) User Interface development</li>
+                                            </ul>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
 										    <ul class="list-inline">
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Angular</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Python</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">jQuery</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Webpack</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/SASS</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">PostgresSQL</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Java/J2EE</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">ActiveMQ</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Oracle DB</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL DB</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Rackspace</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">AWS</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">PL/SQL</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">SpringBoot</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Camel</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">PDFBox</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">POI</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JAXB</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JMS</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JMX</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">RMI</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">REST</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JBoss</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">WAS</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">WebLogic</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Drools</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">MVEL</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">SmartClient/SmartGWT</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">RAP/RCP</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JQuery</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">OSGi</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Fuse / ServiceMix</span></li>
 										    </ul>
 									    </div><!--//resume-timeline-item-desc-->
 
@@ -141,23 +171,38 @@
 									    
 									    <div class="resume-timeline-item-header mb-2">
 										    <div class="d-flex flex-column flex-md-row">
-										        <h3 class="resume-position-title font-weight-bold mb-1">Senior Software Developer</h3>
-										        <div class="resume-company-name ml-auto">Google</div>
+										        <h3 class="resume-position-title font-weight-bold mb-1">Software Engineer cum Build Release Engineer</h3>
+										        <div class="resume-company-name ml-auto">Exceed Consultancy Services</div>
 										    </div><!--//row-->
-										    <div class="resume-position-time">2014 - 2018</div>
+										    <div class="resume-position-time">2004 - 2006</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
-										    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
+										    <p>
+Responsible for contributing to product development as Java developer and managing processes around build / release. 
+Contributed towards production support after gaining expertise on relevant products.</p>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements</h4>
-										    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+										    <p>
+    • Provided application support for Actuate Formula One e-Reporting application<br>
+    • Contributed in development of many productivity tools - a) Functional Test, b) Load Test, c) Java Profile and d) Agentless Monitor<br>
+    • Migration of Java Swing UI to Eclipse SWT UI<br>
+    • Gain expertise in developing COM/DCOM for establishing communication between Java application and Internet Explorer in-order to record/replay tests<br>
+    • Gain experience of java bytecode manipulation using JVMPI and JVMTI<br>
+    • Gain experience of installers - a) InstallAnyWhere and b) Install4J<br>
+    • Coordinated scheduled releases and updates</p>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
 										    <ul class="list-inline">
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">React</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Redux</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Django</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Webpack</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/SASS</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Swing</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">SWT</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">PDE</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">VC++</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">JNI</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Unix</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">MacOSX</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">CSS</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Tomcat</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">HSQL</span></li>
 										    </ul>
 									    </div><!--//resume-timeline-item-desc-->
 
@@ -173,6 +218,50 @@
 							    
 						    </div>
 					    </section><!--//experience-section-->
+					    <section class="resume-section experience-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Personal Projects</h2>
+						    <div class="resume-section-content">
+							    <div class="resume-timeline position-relative">
+								    <article class="resume-timeline-item position-relative pb-5">
+									    
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Statements Manager</h3>
+										        <div class="resume-company-name ml-auto">Open Source</div>
+										    </div><!--//row-->
+										    <div class="resume-position-time"><a href="https://github.com/Jayeshecs/statements">https://github.com/Jayeshecs/statements</a></div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+										    <p>Primary objective of this project was to facilitate personal finance management. Ease of uploading bank account statement via plug-in architecture. Secondary objective was to evaluate <a href="https://isis.apache.org/">Apache Isis</a> framework and try <a href="https://deeplearning4j.org/">DeepLearning4j</a> framework for automatic categorization of transactions.</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
+										    <p></p>
+										    <ul>
+											    <li>Moduler project structure</li>
+                                                <li>Add-on support for custom statement reader</li>
+                                                <li>Inbuilt support for HDFC Bank, Kotak Bank, PayTM</li>
+                                                <li>Specialized screens to manage transaction, manage static data and manage statement reader</li>
+                                                <li>REST API</li>
+                                                <li>Desktop Launcher</li>
+                                                <li>Integration: Github + Travis CI + ReadTheDocs</li>
+										    </ul>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Java 8</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Apache Isis</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">SWT</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">HSQLDB</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">PdfBox</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">MVEL</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">DL4J</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Apache Shiro</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Maven</span></li>
+										    </ul>
+									    </div><!--//resume-timeline-item-desc-->
+
+								    </article><!--//resume-timeline-item-->
+                                </div>
+                            </div>
+                        </section>
 				    </div>
 				    <div class="col-lg-3">
 					    <section class="resume-section skills-section mb-5">
@@ -182,7 +271,7 @@
 							        <h4 class="resume-skills-cat font-weight-bold">Frontend</h4>
 							        <ul class="list-unstyled mb-4">
 								        <li class="mb-2">
-								            <div class="resume-skill-name">Angular / JQuery / KendoUI / SmartClient</div>
+								            <div class="resume-skill-name"> JQuery / SmartClient</div>
 									        <div class="progress resume-progress">
 											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
@@ -196,7 +285,7 @@
 								        <li class="mb-2">
 								            <div class="resume-skill-name">Bootstrap 3 & 4</div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 								        <li class="mb-2">
@@ -214,7 +303,7 @@
 								        <li class="mb-2">
 								            <div class="resume-skill-name">Apache Isis Viewer</div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 							        </ul>
@@ -274,19 +363,19 @@
 								        <li class="mb-2">
 								            <div class="resume-skill-name">Android</div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 								        <li class="mb-2">
 								            <div class="resume-skill-name">Cordova</div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 								        <li class="mb-2">
 								            <div class="resume-skill-name">jQuery Mobile</div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 							        </ul>
@@ -317,8 +406,8 @@
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled">
 								    <li class="mb-2">
-								        <div class="resume-degree font-weight-bold">PGS in Software Technology</div>
-								        <div class="resume-degree-org">C-DAC</div>
+								        <div class="resume-degree font-weight-bold">PGD in Software Technology</div>
+								        <div class="resume-degree-org">C-DAC (formerly NCST)</div>
 								        <div class="resume-degree-time">2003 - 2004</div>
 								    </li>
 								    <li>
