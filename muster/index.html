@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Muster Application by jayeshprajapati.in</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="application/javascript" src="../lib/filereader.js"></script>
+  <script data-main="muster" src="../lib/require.js"></script>
+  <script type="application/javascript">
+      // TODO: https://bgrins.github.io/filereader.js/
+  </script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Muster Application</h1>
+  <p>This application is used for analyzing Window's event viewer export to locate sign-on and sign-off events to calculate many detail e.g. Check-in / check-out time, Time spent on screen, etc. </p> 
+</div>
+  
+<div class="container">
+  <div class="row card-group">
+    <div class="col-sm-4 card">
+      <h3 class="card-title text-info">Step 1</h3>
+      <p class="card-header bg-info font-weight-bold">Event Viewer Filter</p>
+      <p class="card-body">Click on below button to view step by step instructions to search for logon and logoff events in Window's event viewer.
+        <a class="btn btn-primary" href="https://community.spiceworks.com/how_to/130398-how-to-track-user-logon-sessions-using-event-log" target="_blank" style="width: 50%">Instructions</a></p>    
+        <p class="card-body">Make sure to save filter with suitable name e.g. LogonLogoffEvents.</p>
+        <p></p>
+    </div>
+    <div class="col-sm-4 card">
+      <h3 class="card-title text-info">Step 2</h3>
+      <p class="card-header bg-info font-weight-bold">Export Filtered Events as CSV</p>
+      <p class="card-body">Double click on saved filter to view all events. On right hand side locate option "Save all Events as..." and click on it.</p>
+        <p class="card-body">In the "Save as type:" field select "CSV (Comma Separated Value)(*.CSV)" </p>
+        <p class="card-body">Click in the "File name:" box and type a file name and save location for the file. For example: "c:\EventViewerExport" will save the file called LogonLogoffEvents.csv</p>
+        <p class="card-body">Click "Save" to save filtered events in the CSV file</p>
+        <p class="card-body text-info">NOTE: Writing filtered events to csv file may take some time.</p>
+    </div>
+    <div class="col-sm-4 card">
+      <h3 class="card-title text-info">Step 3</h3>        
+      <p class="card-header bg-info font-weight-bold">Upload &amp; View Report</p>
+      <p>Use below field to upload LogonLogoffEvents.csv file</p>
+        <p><span><b>Upload Events CSV file:</b></span><input name="eventsFile" type="file" value="*.csv" />
+        </p>
+        <p>After events file is processed correctly reports will be available below</p>
+    </div>
+  </div>
+    <div class="row">
+        <div class="col-sm-8">
+        </div>
+    </div>
+    <div class="row">
+        <div id="report" class="col-sm-12 card bg-important">
+            
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
