@@ -70,7 +70,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -1741,7 +1741,7 @@ select.form-control:focus::-ms-value {
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -1777,7 +1777,7 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -2753,7 +2753,7 @@ fieldset:disabled a.btn {
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -2997,7 +2997,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #6c757d;
   white-space: nowrap;
 }
@@ -4469,7 +4469,7 @@ input[type="button"].btn-block {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -5208,7 +5208,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.875rem;
+  font-size: 1rem;
   word-wrap: break-word;
   opacity: 0;
 }
@@ -5321,7 +5321,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.875rem;
+  font-size: 1rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -8578,7 +8578,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-social {
-  font-size: 0.875rem;
+  font-size: 1.25rem;
 }
 
 .resume-social .fa-container {
@@ -8645,12 +8645,12 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 
 .resume-company-name {
   color: #58677c;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .resume-position-time {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #aab4c3;
 }
 
@@ -8669,7 +8669,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-skill-name {
-  font-size: 0.8125rem;
+  font-size: 1.25rem;
   color: #434E5E;
 }
 
@@ -8678,12 +8678,12 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-degree-org {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .resume-degree-time {
   color: #aab4c3;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .resume-award-icon {
@@ -8698,7 +8698,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-award-desc {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .resume-lang-name {
