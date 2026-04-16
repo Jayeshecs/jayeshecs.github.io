@@ -29,7 +29,14 @@
 	var onloadFunction = window.onload
 	window.onload = function () {
 		var yearExpEl = document.getElementById("yearExp");
-		yearExpEl.innerHTML = " " + (new Date().getFullYear() - 2020) + "+";
+		// check if current month is before Aug, if yes then consider experience as (current year - 2020 - 1) else consider experience as (current year - 2020)
+		var currentYear = new Date().getFullYear();
+		var currentMonth = new Date().getMonth();
+		var experience = currentYear - 2020;
+		if (currentMonth < 7) { // Months are zero-based, so 7 represents August
+			experience -= 1;
+		}
+		yearExpEl.innerHTML = " " + experience + "+";
 		if (onloadFunction) {
 			onloadFunction.call(window);
 		}
@@ -77,7 +84,7 @@
 			    <section class="resume-section summary-section mb-5">
 				    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary</h2>
 				    <div class="resume-section-content">
-					    <p class="mb-0">Working as an Expert Software Architect at Finastra Technologies, Pune. Joined as Sr. Manager DevOps in 2020 with <span id="yearExp">4+</span> years of experience in developing cloud-native microservices for the Corporate Banking domain. Before Finastra, worked as a Manager at SmartStream Technologies, Mumbai, from 2006 with over 14 years of experience in solution development within the BFSI domain. Prior to SmartStream, worked at Exceed Consultancy Services as a Software Engineer cum Build/Release Engineer, gaining around 2.5 years of experience in developing productivity and reporting tools.</p>
+					    <p class="mb-0">Working as an Expert Software Architect at Finastra Technologies, Pune — leading full-stack development teams building cloud-native microservices and web applications for the Corporate Banking (B2B) domain. Joined in 2020 with <span id="yearExp">4+</span> years of experience in driving technical and process change, defining strategy and roadmap for application modernization, and migrating on-premise applications into the public cloud (Azure). Proven ability to coach and lead diverse application and data engineering teams of 20+ to deliver digital payment solutions with resiliency-based patterns and contract-driven service development. Expertise in Java/Spring Boot, TypeScript/Angular, SQL and NoSQL data storage, and event-driven messaging. Before Finastra, worked as a Manager at SmartStream Technologies, Mumbai, from 2006 with over 14 years of experience in solution development and external party integrations within the BFSI domain. Prior to SmartStream, worked at Exceed Consultancy Services as a Software Engineer cum Build/Release Engineer, gaining around 2.5 years of experience in developing productivity and reporting tools.</p>
 				    </div>
 			    </section><!--//summary-section-->
 			    <div class="row">
@@ -96,31 +103,34 @@
 										    <div class="resume-position-time">2020 - Present</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
-										    <p>Responsible for the architecture and technical solution design of new microservices as part of the Cash Management modernization journey. One key responsibility is to ensure high-quality development with stringent compliance in security, code quality, test automation, performance tests, penetration tests, and disaster recovery tests. Primarily, this is done by enabling the engineering team and closely coordinating with specialized teams. Experienced in developing and managing Multi-Factor Authenticator (<a href="https://store.fusionfabric.cloud/application/onespan-fusion-multi-factor-manager" target="_blank">MFM</a>), Cross-Currency Network (<a href="https://store.fusionfabric.cloud/application/ccn" target="_blank">CCN</a>), and Virtual Account Manager (<a href="https://store.fusionfabric.cloud/application/virtual-accounts" target="_blank">VAM</a>). Also responsible for promoting these microservices on <a href="https://www.fusionfabric.cloud/platform/fusionoperate" target="_blank">Fusion Operate</a>, a managed hosted environment on Azure cloud. Currently working on the architecture and solution design of Liquidity Management services.</p>
+										    <p>Responsible for the architecture and technical solution design of new microservices as part of the Cash Management modernization journey. One key responsibility is to ensure high-quality development with stringent compliance in security, code quality, test automation, performance tests, penetration tests, and disaster recovery tests. Primarily, this is done by enabling the engineering team and closely coordinating with specialized teams. Experienced in developing and managing Liquidity Management (FLM), Multi-Factor Authenticator (MFM), Cross-Currency Network (CCN), and Virtual Account Manager (VAM). Also responsible for promoting these microservices on <a href="https://www.fusionfabric.cloud/platform/fusionoperate" target="_blank">Fusion Operate</a>, a managed hosted environment on Azure cloud. Currently transitioning to new team <b>Center Of Excellence (CoE) for AI</b>.</p>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
                                             <p></p>
                                             <ul>
-												<li>In GenAI (x)po 2.0 Jan 2025, won price for Stratathon best Lending BU Submission</li>
+												<li>Enabled engineering team to achieve 20% productivity gain through adoption of GitHub Copilot Agent Mode and GenAI tools</li>
 												<li>Responsible for Architecture and solution design of Liquidity Management Solution that comprises of Liquidity UI, Liquidity service, Balance service, Netting service and Cashflow forecast (CFF) service</li>
 												<li>Experience in producing high level and low level technical design</li>
 												<li>Expertise in regular reviews of low level technical design and code reviews</li>
-												<li>Close coordination with Principal Architect to review new technical solution</li>
-												<li>Successfully completed trainings on Generative AI and Licese to lead programs</li>
+												<li>Close coordination with Principal Software Architect to review new technical solution</li>
 												<li>Ensure the rating <b>'A'</b> in quality gates for all the microservices</li>
 												<li>Responsible for performance tests and performance tuning for new services</li>
 												<li>Responsible for penetration tests and relevant fixes for new services</li>
-												<li>Hackathon participation for innovation followed by a working prototypes and arranging for relevant demo</li>
-												<li>Successfully managed development of Multi-Factor Management (MFM), Cross Currency Network (CCN) and Virtaul Account Manager (VAM)</li>
+												<li>In GenAI (x)po 2.0 Jan 2025, won prize for Stratathon best Lending BU Submission</li>
+												<li>Active participation in the development of Liquidity Management, Virtual Account Manager, Multi-Factor Management, Cross Currency Network</li>
+												<li>Drove contract-driven service development using OpenAPI/Swagger specifications for all microservices</li>
+												<li>Implemented resiliency-based patterns (retries, failover) for enterprise integration</li>
+												<li>Built solutions integrating with external systems including core banking system, foreign exchange systems and third-party providers</li>
+												<li>Coached and mentored diverse engineering teams across application development and data engineering</li>
+												<li>Defined strategy and roadmap for Cash Management modernization aligned with business and technical requirements</li>
 												<li>Managed a team of 20+ personnel including FTE and Contract resources</li>
 												<li>Arranged for multiple interview drives in close coordination with HR</li>
-												<li>Active participation in weekly and monthly reporting to senior management</li>
+												<li>Active participation in weekly and monthly reporting to senior management (VP and Senior Directors)</li>
 												<li>Active participation in quarterly Program Increament (PI) planning and interim Sprint planning</li>
-												<li>Conducted regular sprint retrospective and rollout agreed process changes wherever required</li>
-												<li>Used Azure DevOps deployment pipeline to promote microservices through stages Dev, Perf, UAT and Production</li>
-												<li>Used Azure DevOps deployment pipeline to conduct regular disaster recovery tests</li>
+												<li>Used Azure DevOps deployment pipeline to promote microservices through stages Dev, Perf, UAT, Production and DR</li>
                                             </ul>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
 										    <ul class="list-inline">
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Github Copilot Agents</span></li>
 												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Java/J2EE</span></li>
                                                 <li class="list-inline-item"><span class="badge badge-primary badge-pill">Oracle DB</span></li>
                                                 <li class="list-inline-item"><span class="badge badge-primary badge-pill">Postgresql</span></li>
@@ -133,27 +143,26 @@
                                                 <li class="list-inline-item"><span class="badge badge-primary badge-pill">Figma</span></li>
                                                 <li class="list-inline-item"><span class="badge badge-primary badge-pill">Adobe XD</span></li>
                                                 <li class="list-inline-item"><span class="badge badge-primary badge-pill">Material Design</span></li>
-                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Finastra Design System</span></li>
-												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Visual Source Code</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">VSCode</span></li>
 												<li class="list-inline-item"><span class="badge badge-primary badge-pill">NPM and Nodejs</span></li>
 												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Markdown and Mermaid</span></li>
-                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">ActiveMQ</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Active MQ</span></li>
 												<li class="list-inline-item"><span class="badge badge-primary badge-pill">IBM MQ</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Rabbit MQ</span></li>
                                                 <li class="list-inline-item"><span class="badge badge-primary badge-pill">POI</span></li>
                                                 <li class="list-inline-item"><span class="badge badge-primary badge-pill">JMS</span></li>
                                                 <li class="list-inline-item"><span class="badge badge-primary badge-pill">JMX</span></li>
-                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Java11</span></li>
 												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Java17</span></li>
-                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Gradle</span></li>
                                                 <li class="list-inline-item"><span class="badge badge-primary badge-pill">Ant</span></li>
 											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Jupyter Notebook</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Azure cloud</span></li>
                                                 <li class="list-inline-item"><span class="badge badge-primary badge-pill">Azure DevOps</span></li>
                                                 <li class="list-inline-item"><span class="badge badge-primary badge-pill">Github Actions</span></li>
 												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Docker</span></li>
 												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Kubernetes</span></li>
                                                 <li class="list-inline-item"><span class="badge badge-primary badge-pill">AppDynamics</span></li>
-												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Grafana & Prometheus</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Grafana and Prometheus</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">CodeQL</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Arnica</span></li>
 												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Checkmarx</span></li>
 												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Mend (formerly Whitesource)</span></li>
 												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Burp Suite</span></li>
@@ -342,7 +351,19 @@ Contributed towards production support after gaining expertise on relevant produ
 						            <h4 class="resume-skills-cat font-weight-bold">Artificial Intelligence</h4>
 							        <ul class="list-unstyled">
 								        <li class="mb-2">
-								            <div class="resume-skill-name">Copilot & Prompt Engineering</div>
+								            <div class="resume-skill-name">GitHub Copilot Agent Mode</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">Prompt Engineering</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">ChatGPT, Gemini &amp; NotebookLM</div>
 									        <div class="progress resume-progress">
 											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
@@ -357,12 +378,6 @@ Contributed towards production support after gaining expertise on relevant produ
 								            <div class="resume-skill-name"><a href="https://jupyter.org/">Jupyter Notebook</a></div>
 									        <div class="progress resume-progress">
 											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
-								        <li class="mb-2">
-								            <div class="resume-skill-name">Deeplearning4j</div>
-									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 							        </ul>
@@ -419,7 +434,7 @@ Contributed towards production support after gaining expertise on relevant produ
 							        <h4 class="resume-skills-cat font-weight-bold">Frontend</h4>
 							        <ul class="list-unstyled mb-4">
 								        <li class="mb-2">
-								            <div class="resume-skill-name"> Angular & Material design</div>
+								            <div class="resume-skill-name"> TypeScript / Angular &amp; Material design</div>
 									        <div class="progress resume-progress">
 											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
@@ -479,12 +494,6 @@ Contributed towards production support after gaining expertise on relevant produ
 											</div>
 								        </li>
 								        <li class="mb-2">
-								            <div class="resume-skill-name">Spark / Hadoop</div>
-									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
-								        <li class="mb-2">
 								            <div class="resume-skill-name">TLM&trade; Control</div>
 									        <div class="progress resume-progress">
 											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -497,9 +506,21 @@ Contributed towards production support after gaining expertise on relevant produ
 											</div>
 								        </li>
 								        <li class="mb-2">
-								            <div class="resume-skill-name">Oracle/MySQL/Neo4j/H2/Postgres</div>
+								            <div class="resume-skill-name">Oracle/MySQL/MongoDB/H2/Postgres</div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+							        </ul>
+						        </div><!--//resume-skill-item-->
+
+						        <div class="resume-skill-item">
+							        <h4 class="resume-skills-cat font-weight-bold">Data Engineering</h4>
+							        <ul class="list-unstyled mb-4">
+								        <li class="mb-2">
+								            <div class="resume-skill-name">SQL and NoSQL Data Storage</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 							        </ul>
@@ -575,8 +596,12 @@ Contributed towards production support after gaining expertise on relevant produ
 							            <li class="list-inline-item"><span class="badge badge-light">AWS</span></li>
 							            <li class="list-inline-item"><span class="badge badge-light">Blockchain</span></li>
 							            <li class="list-inline-item"><span class="badge badge-light">Eclipse & VSCode</span></li>
-							            <li class="list-inline-item"><span class="badge badge-light">Drools / MVeL</span></li>
-						            </ul>
+							            <li class="list-inline-item"><span class="badge badge-light">Drools / MVeL</span></li>						            <li class="list-inline-item"><span class="badge badge-light">B2B Payments</span></li>
+						            <li class="list-inline-item"><span class="badge badge-light">Full-Stack Development</span></li>
+						            <li class="list-inline-item"><span class="badge badge-light">Resiliency Patterns</span></li>
+						            <li class="list-inline-item"><span class="badge badge-light">Contract-Driven Development</span></li>
+						            <li class="list-inline-item"><span class="badge badge-light">Event-Driven Architecture</span></li>
+						            <li class="list-inline-item"><span class="badge badge-light">GitHub Copilot Agent Mode</span></li>						            </ul>
 						        </div><!--//resume-skill-item-->
 						    </div><!--resume-section-content-->
 					    </section><!--//skills-section-->
@@ -597,25 +622,6 @@ Contributed towards production support after gaining expertise on relevant produ
 							    </ul>
 						    </div>
 					    </section><!--//education-section-->
-					    <!-- 
-					    <section class="resume-section reference-section mb-5">
-						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Awards</h2>
-						    <div class="resume-section-content">
-							    <ul class="list-unstyled resume-awards-list">
-								    <li class="mb-2 pl-4 position-relative">
-								        <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
-								        <div class="resume-award-name">Award Name Lorem</div>
-								        <div class="resume-award-desc">Award desc goes here, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</div>
-								    </li>
-								    <li class="mb-0 pl-4 position-relative">
-								        <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
-								        <div class="resume-award-name">Award Name Ipsum</div>
-								        <div class="resume-award-desc">Award desc goes here, ultricies nec, pellentesque.</div>
-								    </li>
-							    </ul>
-						    </div>
-					    </section>
-					     -->
 					    <!--//interests-section-->
 					    <section class="resume-section language-section mb-5">
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language</h2>
@@ -634,7 +640,7 @@ Contributed towards production support after gaining expertise on relevant produ
 							    <ul class="list-unstyled">
 								    <li class="mb-1">Movies, Shows and Shonens</li>
 								    <li class="mb-1">Travelling</li>
-								    <li class="mb-1">Reading</li>
+								    <li class="mb-1">Reading Books</li>
 								    <li class="mb-1">Cricket and Football</li>
 							    </ul>
 						    </div>

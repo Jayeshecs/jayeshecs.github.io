@@ -8651,7 +8651,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 
 .resume-position-time {
   font-size: 1rem;
-  color: #aab4c3;
+  color: #040404;
 }
 
 .resume-position-title {
@@ -8664,7 +8664,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-skills-cat {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #434E5E;
 }
 
@@ -8674,15 +8674,16 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-degree {
-  color: #434E5E;
+  color: #141414;
 }
 
 .resume-degree-org {
   font-size: 1rem;
+  color: #141414;
 }
 
 .resume-degree-time {
-  color: #aab4c3;
+  color: #141414;
   font-size: 1rem;
 }
 
